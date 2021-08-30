@@ -1,6 +1,8 @@
 // Express JS Crash Course //
 // https://www.youtube.com/watch?v=L72fhGm1tfE
 
+const { nextTick } = require("process");
+
 // web framework for node.js
 // unopinionated - not a high level framework
 // minimalist
@@ -110,3 +112,26 @@
 
 // SET A STATIC FOLDER //
 // app.use(express.static(path.join(__dirname, "public")));
+
+// MIDDLEWARE FUNCTIONS //
+// request, response, next
+// call next last so that you can move to the next middleware function in the stack
+// example middleware function
+// const middlewareF = (req, res, next) => {
+//    console.log("this is middleware");
+//    next();
+//}
+// initialize middleware here
+// app.use(middlewareF);
+
+// every time we make a request middleware will run
+// access to req, res
+// log maybe url, date
+
+// log URL console.log(`${req.protocol}://${req.get('host')}${req.originalUrl}`);
+// log DATE/TIME
+// he uses moment here
+// const moment = require("moment");
+// console.log(`${req.protocol}://${req.get('host')}${req.originalUrl}: ${moment().format()`);
+// maybe save this to a file with the fs module hell yeah buddy
+

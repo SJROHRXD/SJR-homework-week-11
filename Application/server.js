@@ -22,3 +22,9 @@ const PORT = process.env.PORT || 3000;
 
 // SET A STATIC FOLDER //
 app.use(express.static(path.join(__dirname, "public")));
+
+// RETURN JSON //
+// app.get("db.json", (req,res) => {
+//     res.json(gettingsomevar);
+// });
+
