@@ -1,1 +1,6 @@
-import { v4 as uuidv4 } from 'uuid';
+const fs = require("fs");
+const path = require("path");
+
+module.exports = {
+    newNoteCreated
+};
