@@ -1,7 +1,7 @@
 // Express JS Crash Course //
 // https://www.youtube.com/watch?v=L72fhGm1tfE
 
-const { nextTick } = require("process");
+// const { nextTick } = require("process");
 
 // web framework for node.js
 // unopinionated - not a high level framework
